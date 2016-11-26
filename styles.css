@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	background-image: url("background.png");
+	background-position: bottom;
 }
 ol, ul {
 	list-style: none;
@@ -58,9 +59,17 @@ table {
 	font-size: 65px;
 	text-align: center;
 	font-family: 'Arial';
+	margin-bottom: 20px;
 }
 
 .controlButtons input[type=button]{
 	border-radius: 10px;
+	display: inline-block;
+	cursor: pointer;
 	color:#fff;
+	background: rgb(154,125,244);
+	padding: 10px;
+	font-size: 14px;
+	width: 48%;
+	border:none;
 }
