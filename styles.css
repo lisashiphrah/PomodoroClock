@@ -52,3 +52,9 @@ table {
     margin-top: -150px;
     margin-left: -180px;
 }
+
+.counter {
+	font-size: 36px;
+	text-align: center;
+	font-family: 'Arial';
+}
