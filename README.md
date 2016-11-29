@@ -13,3 +13,4 @@ This project is one of the final projects required to receive the FreeCodeCamp F
 7. Remember to use Read-Search-Ask if you get stuck.
 8. When you are finished, click the "I've completed this challenge" button and include a link to your CodePen.
 
+![Calculator Screenshot](/pomodoroClock.png)
