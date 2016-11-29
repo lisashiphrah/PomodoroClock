@@ -74,7 +74,7 @@ table {
 	border:none;
 }
 
-input[type=button]:hover, button:hover, button:active, button:focus {
+input[type=button]:hover, .configurationButtons button:hover{
 	background: rgb(106, 71, 214);
 }
 
