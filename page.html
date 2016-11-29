@@ -15,7 +15,18 @@
 				<input type="button" value="Stop"/>
 			</div>
 			<div class="configurationButtons">
-				
+				<div class="boxBreakLength">    
+			        <label for="qtyBreak">Break Length</label>
+			        <input id="qtyBreak" value="0" readonly="readonly"/>
+			        <button id="down" onclick="modify_qty(-1, 'qtyBreak')">-</button>
+			        <button id="up" onclick="modify_qty(1, 'qtyBreak')">+</button>
+			    </div>
+			    <div class="boxSessionLength">    
+			        <label for="qtySession">Session Length</label>
+			        <input id="qtySession" value="0" readonly="readonly"/>
+			        <button id="down" onclick="modify_qty(-1, 'qtySession')">-</button>
+			        <button id="up" onclick="modify_qty(1, 'qtySession')">+</button>
+			    </div>
 			</div>
 		</div>
 	</body>
