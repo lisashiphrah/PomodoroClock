@@ -75,7 +75,7 @@ table {
 }
 
 input[type=button]:hover, button:hover, button:active, button:focus {
-	background-color: rgb (122, 92, 216);
+	background: rgb(106, 71, 214);
 }
 
 /************************* COUNTER STYLES *************************/
