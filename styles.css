@@ -74,6 +74,10 @@ table {
 	border:none;
 }
 
+input[type=button]:hover, button:hover, button:active, button:focus {
+	background-color: rgb (122, 92, 216);
+}
+
 /************************* COUNTER STYLES *************************/
 .configurationButtons {
 	margin-top: 30px;
