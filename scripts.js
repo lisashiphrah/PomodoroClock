@@ -1,11 +1,12 @@
 $(document).ready(function(){
-	
-	$('#btnStart').click(function(){
+	var interval;
 
+	$('#btnStart').click(function(){
+		interval = setInterval(updateTimer, 1000);
 	});
 
 	$('#btnStop').click(function(){
-
+		clearInterval(interval);
 	});
 
 	function updateTimer(){
