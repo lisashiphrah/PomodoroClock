@@ -12,8 +12,8 @@ $(document).ready(function(){
 	function updateTimer(){
 		var seconds = parseInt($('#timer').val());
 		seconds = seconds -1;
-		if (secs < 0) { //timer is over
-
+		if (seconds < 0) { //timer is over
+			clearInterval(interval);
 		}
 		else {
 			$('#timer').val(seconds);
