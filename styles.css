@@ -43,13 +43,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+img {
+	width:250px;
+	position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -125px;
+}
+
 #pomodoro {
 	width:350px;
 	height:270px;
 	background:#fff;
 	border-radius: 10px;
 	position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     margin-top: -170px;
     margin-left: -200px;
