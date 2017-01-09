@@ -1,25 +1,47 @@
 $(document).ready(function(){
 	var interval;
+	var sessionLength = $('#qtySession').val();
+	var secsLength = 60 * sessionLength;
+	var currentTimeSecs = 0;
 
+
+	//Event to start countdown
 	$('#btnStart').click(function(){
+		var sessionLength = $('#qtySession').val();
+		var secsLength = 60 * sessionLength;
+		currentTimeSecs = secsLength;
+
+		$('#timer').text(secondsToHms(secsLength));
 		interval = setInterval(updateTimer, 1000);
+
+
+		function updateTimer(){
+			currentTimeSecs = currentTimeSecs -1;
+			if (currentTimeSecs < 0) { //timer is over
+				clearInterval(interval);
+			}
+			else {
+				$('#timer').text(secondsToHms(currentTimeSecs));
+			}
+		}
 	});
 
+	//Event to abort countdown
 	$('#btnStop').click(function(){
 		clearInterval(interval);
 	});
-
-	function updateTimer(){
-		var seconds = parseInt($('#timer').val());
-		seconds = seconds -1;
-		if (seconds < 0) { //timer is over
-			clearInterval(interval);
-		}
-		else {
-			$('#timer').val(seconds);
-		}
-	}
+	
 });
+
+function secondsToHms(d) {
+    d = Number(d);
+    var h = Math.floor(d / 3600);
+    var m = Math.floor(d % 3600 / 60);
+    var s = Math.floor(d % 3600 % 60);
+    return (
+      (h > 0 ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (s < 10 ? "0" : "") + s
+    ); 
+  }
 
 function modify_qty(val, id) {
     var qty = document.getElementById(id).value;
