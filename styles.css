@@ -127,6 +127,10 @@ input[type=button]:hover, .configurationButtons button:hover{
 	text-align: center;
 }
 
+.break {
+	border: 7px solid #bd3030
+}
+
 
 
 

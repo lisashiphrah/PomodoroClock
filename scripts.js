@@ -3,10 +3,13 @@ $(document).ready(function(){
 	var sessionLength = $('#qtySession').val();
 	var secsLength = 60 * sessionLength;
 	var currentTimeSecs = 0;
+	var isBreak = false;
 
 
 	//Event to start countdown
 	$('#btnStart').click(function(){
+		$('#pomodoro').removeClass('break');
+
 		var sessionLength = $('#qtySession').val();
 		var secsLength = 60 * sessionLength;
 		currentTimeSecs = secsLength;
@@ -16,13 +19,17 @@ $(document).ready(function(){
 
 
 		function updateTimer(){
-			currentTimeSecs = currentTimeSecs -1;
-			if (currentTimeSecs < 0) { //timer is over
+			if (currentTimeSecs <= 0 && isBreak === false) { //timer is over
+				$('#pomodoro').addClass('break');
+				isBreak = true;
+				currentTimeSecs = 60 * $('#qtyBreak').val();
+			}
+			else if (currentTimeSecs <= 0 && isBreak === true) {
 				clearInterval(interval);
+				return;
 			}
-			else {
-				$('#timer').text(secondsToHms(currentTimeSecs));
-			}
+			currentTimeSecs = currentTimeSecs -1;
+			$('#timer').text(secondsToHms(currentTimeSecs));
 		}
 	});
 
