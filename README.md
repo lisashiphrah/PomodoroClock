@@ -10,7 +10,5 @@ This project is one of the final projects required to receive the FreeCodeCamp F
 4. User Story: I can start a 25 minute pomodoro, and the timer will go off once 25 minutes has elapsed. :alarm_clock:
 5. User Story: I can reset the clock for my next pomodoro. :arrows_counterclockwise:
 6. User Story: I can customize the length of each pomodoro.
-7. Remember to use Read-Search-Ask if you get stuck.
-8. When you are finished, click the "I've completed this challenge" button and include a link to your CodePen.
 
 ![Calculator Screenshot](/pomodoroClock.png)
