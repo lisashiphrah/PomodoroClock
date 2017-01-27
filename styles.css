@@ -53,6 +53,8 @@ img {
     margin-left: -125px;
 }
 
+/************************* COUNTER STYLES *************************/
+
 #pomodoro {
 	width:350px;
 	height:270px;
@@ -88,7 +90,6 @@ input[type=button]:hover, .configurationButtons button:hover{
 	background: rgb(106, 71, 214);
 }
 
-/************************* COUNTER STYLES *************************/
 .configurationButtons {
 	margin-top: 30px;
 }
@@ -131,7 +132,8 @@ input[type=button]:hover, .configurationButtons button:hover{
     box-shadow: 0px 0px 12px 0px #000;
 }
 
-.configurationButtons .boxBreakLength, .configurationButtons .boxSessionLength {
+.configurationButtons .boxBreakLength,
+.configurationButtons .boxSessionLength {
 	display: inline-block;
 	width: 48%;
 	text-align: center;

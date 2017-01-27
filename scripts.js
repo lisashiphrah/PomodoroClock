@@ -14,6 +14,8 @@ $(document).ready(function(){
 		var secsLength = 60 * sessionLength;
 		currentTimeSecs = secsLength;
 
+		//Initiates the counter. Calls updateTimer every 1 second using
+		//the setInterval function
 		$('#timer').text(secondsToHms(secsLength));
 		interval = setInterval(updateTimer, 1000);
 
